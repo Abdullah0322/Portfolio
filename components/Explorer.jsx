@@ -62,7 +62,7 @@ const Explorer = () => {
               <p>contact.css</p>
             </div>
           </Link>
-          <Link href="/projects">
+          {/* <Link href="/projects">
             <div className={styles.file}>
               <Image
                 src="/js_icon.svg"
@@ -73,8 +73,8 @@ const Explorer = () => {
               <p>projects.js</p>
             </div>
           </Link>
-         
-          <Link href="/github">
+          */}
+          {/* <Link href="/github">
             <div className={styles.file}>
               <Image
                 src="/markdown_icon.svg"
@@ -84,7 +84,7 @@ const Explorer = () => {
               />{' '}
               <p>github.md</p>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
