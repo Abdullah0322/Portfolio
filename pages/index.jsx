@@ -18,12 +18,12 @@ export default function HomePage() {
       <div className={styles.left}>
         <h4 className={styles.welcome}>Hello, I'm</h4>
         <h1 className={styles.title}>Abdullah Naveed</h1>
-        <h3 className={styles.subtitle}>MERN-STACK Developer/Flutter Developer</h3>
+        <h3 className={styles.subtitle}>Full Stack Developer</h3>
         <ul className={styles.contacts}>
           <li>
             <FontAwesomeIcon icon={faEnvelope} />
-            <a href="mailto:abdullahnaveed71.am@gmail.com">
-              abdullahnaveed71.am@gmail.com
+            <a href="mailto:abdullahnaveedmalik1999@gmail.com">
+            abdullahnaveedmalik1999@gmail.com
             </a>
           </li>
           <li>
@@ -39,10 +39,10 @@ export default function HomePage() {
             <FontAwesomeIcon icon={faPhoneAlt} />
             <a href="tel:+923224272740">+923224272740</a>
           </li>
-          <li>
+          {/* <li>
             <FontAwesomeIcon icon={faGithubAlt} />
             <a href="https://github.com/Abdullah0322">Github</a>
-          </li>
+          </li> */}
           <li>
             <FontAwesomeIcon icon={faLinkedin} />
             <a href="https://www.linkedin.com/in/abdullah-malik-a49301161/">

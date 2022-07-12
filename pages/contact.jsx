@@ -24,8 +24,8 @@ const ContactPage = () => {
           <div className={styles.cardBody}>
             <h2>Email</h2>
             <p>
-              <a href="mailto:abdullahnaveed71.am@gmail.com">
-              mailto:abdullahnaveed71.am@gmail.com
+              <a href="mailto:abdullahnaveedmalik1999@gmail">
+             abdullahnaveedmalik1999@gmail
               </a>
             </p>
           </div>

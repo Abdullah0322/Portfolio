@@ -1,10 +1,18 @@
 import Image from "next/image";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import useDownloader from "react-use-downloader";
 import styles from "../styles/AboutPage.module.css";
 
 const AboutPage = () => {
+  const { size ,download,
+    cancel, error } =
+useDownloader();
+
+const fileUrl = "/cv.pdf";
+const filename = "cv.pdf";
+
+
   return (
     <div className={styles.container}>
       <div className={styles.rightScreen}>
@@ -19,10 +27,7 @@ const AboutPage = () => {
       <div className={styles.leftScreen}>
         <h2 className={styles.title}>About Me</h2>
         <p className={styles.about}>
-          Hello, I’m Abdullah, Mern-Stack and Flutter developer based in Lahore,
-          Pakistan. I have rich experience in building web and cross plartform
-          mobile applications. In summary I'm a Full Stack Developer skilled in
-          the following
+        I am a fullStack web developer with over 5 years of experience in all levels of front-end and back-end development. My tech stack include's  Javascript/Typescript frameworks( React.js, Redux , Functional component,React Hooks,  NextJs, NestJs , NodeJs). I also have experience working with Sequelize ,TypeORM and Mongoose ORM's. My business objective is to build websites and deliver them before deadlines.
         </p>
         <ul className={styles.skillList}>
           <li>
@@ -35,10 +40,22 @@ const AboutPage = () => {
             <span>JavaScript</span>
           </li>
           <li>
-            <span>Node JS</span>
+            <span>TypeScript</span>
           </li>
           <li>
             <span>REACT JS</span>
+          </li>
+          <li>
+            <span>NEXT JS</span>
+          </li>
+          <li>
+            <span>Node JS</span>
+          </li>
+          <li>
+            <span>Express</span>
+          </li>
+          <li>
+            <span>MY SQL</span>
           </li>
           <li>
             <span>MONGO DB</span>
@@ -46,13 +63,12 @@ const AboutPage = () => {
           <li>
             <span>Firebase</span>
           </li>
-          <li>
-            <span>Dart</span>
-          </li>
+        
         </ul>
-        <a className={styles.resumeButton} href="#">
+        <button className={styles.resumeButton} onClick={() => download(fileUrl, filename)} >  Download Resume <FontAwesomeIcon icon={faDownload}/>  </button>
+        {/* <a className={styles.resumeButton} href="#">
           Download Resume <FontAwesomeIcon icon={faDownload} />
-        </a>
+        </a> */}
       </div>
     </div>
   );
